@@ -1,20 +1,20 @@
 //
-//  ExploreView.swift
+//  SwiftUIView.swift
 //  Twitter_IOS
 //
-//  Created by Student26 on 18/06/2023.
+//  Created by Student26 on 19/06/2023.
 //
 
 import SwiftUI
 
-struct ExploreView: View {
+struct SwiftUIView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct ExploreView_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ExploreView()
+        SwiftUIView()
     }
 }
