@@ -4,37 +4,50 @@
 //
 //  Created by Student26 on 18/06/2023.
 //
-
+import Firebase
 import SwiftUI
-
+import Kingfisher
 struct TweetRowView: View {
+    @ObservedObject var viewModel: TweetRowViewModel
+    
+    init(tweet: Tweet){
+        self.viewModel = TweetRowViewModel(tweet: tweet)
+    }
     var body: some View {
         VStack(alignment: .leading){
-            //profile image + user info
+            //profile image + user info+ tweet
+            if let user = viewModel.tweet.user{
             HStack(alignment: .top,spacing: 12){
-                Circle()
+              
+                KFImage(URL(string: user.profileImageUrl))
+                    .resizable()
+                    .scaledToFill()
                     .frame(width: 56,height: 56)
-                    .foregroundColor(Color(.systemBlue))
+                    .clipShape(Circle())
                 // user info & tweet caption
                 VStack(alignment: .leading, spacing: 4 ){
                     // user info
-                    HStack{
-                        Text("Bruce Wayne")
-                            .font(.subheadline).bold()
-                        
-                        Text("@batman")
-                            .foregroundColor(.gray)
-                            .font(.caption)
-                        
-                        Text("@2w")
-                            .foregroundColor(.gray)
-                            .font(.caption)
-                    }
+                    
+                        HStack{
+                            Text("Bruce Wayne")
+                                .font(.subheadline).bold()
+                            
+                            Text("@batman")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                            
+                            Text("@2w")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                        }
                     //tweet caption
-                    Text("I believe in Harvey Dent")
+                    Text(viewModel.tweet.caption)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
-                }
+                    }
+                    
+                   
+               }
                 
             }
             // action buttons
@@ -54,10 +67,13 @@ struct TweetRowView: View {
                 }
                 Spacer()
                 Button{
-                    // action goes here...
+                    viewModel.tweet.didLike ?? false ?
+                    viewModel.unlikeTweet() :
+                    viewModel.likeTweet()
                 }label:{
-                    Image(systemName: "heart")
+                    Image(systemName: viewModel.tweet.didLike ?? false ? "heart.fill" : "heart")
                         .font(.subheadline)
+                        .foregroundColor(viewModel.tweet.didLike ?? false ? .red : .gray)
                 }
                 Spacer()
                 Button{
@@ -76,6 +92,6 @@ struct TweetRowView: View {
 
 struct TweetRowView_Previews: PreviewProvider {
     static var previews: some View {
-        TweetRowView()
+        TweetRowView(tweet: Tweet(caption: "", timestamp:Timestamp(date: Date()), uid: "", likes: 0))
     }
 }

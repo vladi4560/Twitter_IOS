@@ -6,10 +6,24 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     @State private var showMenu = false
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
+        Group{
+            if viewModel.userSession == nil {
+                LoginView()
+            }else{
+                mainInterFaceView
+            }
+        }
+    }
+}
+
+extension ContentView{
+    var mainInterFaceView: some View{
         ZStack(alignment: .topLeading){
             MainTabView()
                 .navigationBarHidden(showMenu)
@@ -36,14 +50,19 @@ struct ContentView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading){
-                Button{
-                    
-                    withAnimation(.easeInOut){
-                        showMenu.toggle()
+                if let user = viewModel.currentUser{
+                    Button{
+                        
+                        withAnimation(.easeInOut){
+                            showMenu.toggle()
+                        }
+                    } label: {
+                        KFImage(URL(string: user.profileImageUrl))
+                            .resizable()
+                            .scaledToFill()
+                            .clipShape(Circle())
+                            .frame(width: 32, height: 32)
                     }
-                } label: {
-                    Circle()
-                        .frame(width: 32 , height: 32)
                 }
             }
         }
@@ -52,7 +71,6 @@ struct ContentView: View {
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
