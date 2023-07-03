@@ -29,14 +29,14 @@ struct TweetRowView: View {
                     // user info
                     
                         HStack{
-                            Text("Bruce Wayne")
+                            Text(user.fullname)
                                 .font(.subheadline).bold()
                             
-                            Text("@batman")
+                            Text("@\(user.username)")
                                 .foregroundColor(.gray)
                                 .font(.caption)
                             
-                            Text("@2w")
+                            Text("2w")
                                 .foregroundColor(.gray)
                                 .font(.caption)
                         }
