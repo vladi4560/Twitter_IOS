@@ -11,34 +11,52 @@ YourTweetApp is a social media platform that allows users to share their thought
 
 - **Follow and Connect:** Users can follow other users and receive updates from their followed accounts. This fosters a sense of community and facilitates interactions with like-minded individuals.
 
-- **Discover Content:** Users can explore a diverse range of tweets from different users, allowing them to stay informed and engaged with trending topics, news, and discussions.
+- **Login and Sign Up** Users can explore a diverse range of tweets from different users, allowing them to stay informed and engaged with trending topics, news, and discussions.
 
-- **Engagement and Interactions:** Users can engage with tweets by liking, commenting, and retweeting them. This encourages conversations, facilitates sharing of interesting content, and promotes user engagement.
+- **Engagement and Interactions:** Users can engage with tweets by liking.
+  
+- **Explore:** Users can search and view other users profile.
+- 
+- **User Profiles:** Each user has a personalized profile page where they can showcase their bio, profile picture, tweet history and tweets they liked.
+
+
+## Screens
+
+| Sigh Up | 
+| --- | 
+|[https://github.com/vladi4560/Twitter_IOS/assets/64600121/f1eacd0e-cd20-4720-aa05-05d122ca3422]|
+  
+
+| Login | 
+| --- | 
+|https://github.com/vladi4560/Twitter_IOS/assets/64600121/b818388f-b85c-49b9-b226-98d1e10461f2|
+
+
+| Profile | 
+| --- | 
+|https://github.com/vladi4560/Twitter_IOS/assets/64600121/c1a7ba9f-e21f-412e-8722-74216fb95bc0|
+
+
+|Upload tweet | 
+| --- | 
+|https://github.com/vladi4560/Twitter_IOS/assets/64600121/5de26238-47b9-4b04-81e8-6e878bd0e451|
+
+|Explore | 
+| --- | 
+|https://github.com/vladi4560/Twitter_IOS/assets/64600121/fd312322-66e5-4341-9f93-0f67036358cc|
+
+
+
+
+
+## Future Plan
+
+- **Engagement and Interactions:** Users will have the opportunity to engage with tweets by commenting, and retweeting them.
+
+- **User Profiles:** Each user will be able to Edit his own Profile.
 
 - **Notifications:** Users receive notifications about new followers, likes, comments, and mentions, enabling them to stay connected and updated on interactions related to their account.
+- **Massage Feature:** Engage in private conversations with other users through our secure and intuitive messaging feature. Exchange messages, share media, and connect with friends and followers on a more personal level.
 
-- **User Profiles:** Each user has a personalized profile page where they can showcase their bio, profile picture, and tweet history. This helps users build their online presence and provides a platform to express their individuality.
 
-## Installation
 
-To start using YourTweetApp, follow these steps:
-
-1. Download and install the app from the App Store/Google Play Store.
-
-2. Create a new account or sign in with your existing account.
-
-3. Customize your profile, including a profile picture and bio.
-
-4. Start exploring, tweeting, and connecting with other users.
-
-## Privacy and Security
-
-At YourTweetApp, we prioritize the privacy and security of our users. We implement robust measures to protect user data and ensure a safe and secure environment for everyone. We have strict policies in place to prevent unauthorized access, safeguard personal information, and combat any misuse or abuse on the platform.
-
-## Feedback and Support
-
-We value user feedback and continuously strive to enhance the YourTweetApp experience. If you have any suggestions, encounter any issues, or need assistance, please reach out to our support team at [support@yourtweetapp.com](mailto:support@yourtweetapp.com). We are dedicated to providing prompt and helpful support to our users.
-
-## Stay Connected
-
-Follow us on [Facebook](https://www.facebook.com/YourTweetApp) and [Twitter](https://www.twitter.com/YourTweetApp) to stay updated on the latest news, features, and updates from YourTweetApp.
