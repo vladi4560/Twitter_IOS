@@ -47,8 +47,6 @@ YourTweetApp is a social media platform that allows users to share their thought
 
 
 
-
-
 ## Future Plan
 
 - **Engagement and Interactions:** Users will have the opportunity to engage with tweets by commenting, and retweeting them.
