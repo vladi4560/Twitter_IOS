@@ -16,7 +16,7 @@ YourTweetApp is a social media platform that allows users to share their thought
 - **Engagement and Interactions:** Users can engage with tweets by liking.
   
 - **Explore:** Users can search and view other users profile.
-- 
+
 - **User Profiles:** Each user has a personalized profile page where they can showcase their bio, profile picture, tweet history and tweets they liked.
 
 
@@ -57,6 +57,18 @@ YourTweetApp is a social media platform that allows users to share their thought
 
 - **Notifications:** Users receive notifications about new followers, likes, comments, and mentions, enabling them to stay connected and updated on interactions related to their account.
 - **Massage Feature:** Engage in private conversations with other users through our secure and intuitive messaging feature. Exchange messages, share media, and connect with friends and followers on a more personal level.
+
+## Technologies Used
+
+- SwiftUI: Apple's modern declarative user interface framework for building iOS apps.
+
+- Firebase Firestore: A NoSQL cloud database provided by Firebase for storing and synchronizing app data.
+
+- Firebase Auth: Firebase's authentication service for managing user authentication and authorization.
+
+- Firebase Storage: Firebase's cloud storage service for storing and retrieving user-generated content such as images and videos.
+
+- Kingfisher: A powerful Swift library for downloading and caching images from the web.
 
 
 
