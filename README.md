@@ -43,7 +43,7 @@ YourTweetApp is a social media platform that allows users to share their thought
 
 |Explore | 
 | --- | 
-|https://github.com/vladi4560/Twitter_IOS/assets/64600121/fd312322-66e5-4341-9f93-0f67036358cc|
+|![video](https://github.com/vladi4560/Twitter_IOS/assets/64600121/fd312322-66e5-4341-9f93-0f67036358cc)|
 
 
 
