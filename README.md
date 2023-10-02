@@ -25,7 +25,8 @@ YourTweetApp is a social media platform that allows users to share their thought
 | Sigh Up | 
 | --- | 
 |![video](https://github.com/vladi4560/Twitter_IOS/assets/64600121/f1eacd0e-cd20-4720-aa05-05d122ca3422)
-  
+![ezgif com-video-to-gif](https://github.com/vladi4560/Twitter_IOS/assets/64600121/a9cae57a-d455-497c-8c24-45065b80e5e5.gif)
+
 
 | Login | 
 | --- | 
